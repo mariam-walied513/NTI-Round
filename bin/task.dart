@@ -7,7 +7,8 @@
 // print("sum = $sum");
 // }
 
-
+// to deal with input and output we have to import dart:io library;
+// to make the user input his details;
 import 'dart:io';
 void main(){
 List<List<String>> Seats=[];

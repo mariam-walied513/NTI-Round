@@ -1,24 +1,24 @@
-import 'm.dart';
+import 'dart:io';
+
 void main() {
-int P=0;
-int N=0;
-int Z=0;
-int num;
+  int p = 0;
+  int n = 0;
+  int z = 0;
 
-for(int i=1;i<=8;i++){
-  print("enter number $i:");
-}
-   if(num>0){
-    P++;
-  }
-}
-    else if(num<0){
-        N++;
+  for (int i = 1; i <= 8; i++) {
+    stdout.write('enter number $i: ');
+    int num = int.parse(stdin.readLineSync() ?? '0');
 
-   }
-     else{
-        Z++;
+    if (num > 0) {
+      p++;
+    } else if (num < 0) {
+      n++;
+    } else {
+      z++;
+    }
   }
-     print("positive=$P");
-      print("negative=$N");
-      print("Zero=$Z");
+
+  print('positive=$p');
+  print('negative=$n');
+  print('Zero=$z');
+}
